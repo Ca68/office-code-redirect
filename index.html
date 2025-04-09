@@ -190,7 +190,7 @@
       const code = document.getElementById("codeInput").value.trim().toUpperCase();
       const match = lookupTable[code];
       if (match) {
-        const qualtricsLink = `https://colostate.pdx1.qualtrics.com/jfe/preview/previewId/5aa78abb-f511-4a4e-aa9b-11bcb7036ab2/SV_6nkfLsvGeEjLLiC?Q_CHL=preview&Q_SurveyVersionID=current?WorkplaceAddress=${encodeURIComponent(match.address)}&LinkedLocation=${encodeURIComponent(match.linked)}`;
+        const qualtricsLink = 'https://colostate.az1.qualtrics.com/jfe/form/SV_6nkfLsvGeEjLLiC?WorkplaceAddress=${encodeURIComponent(match.address)}&LinkedLocation=${encodeURIComponent(match.linked)}`;
         window.location.href = qualtricsLink;
       } else {
         document.getElementById("errorMsg").innerText = "Invalid code. Please check the letter you received.";
